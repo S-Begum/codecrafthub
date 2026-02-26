@@ -1,0 +1,21 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Express.js Fundamentals",
+      "description": "Learn Express.js framework",
+      "target_date": "2024-06-30",
+      "status": "Completed",
+      "created_at": "2026-02-26T18:23:58.526Z",
+      "updated_at": "2026-02-26T18:42:34.161Z"
+    },
+    {
+      "id": 2,
+      "name": "Advanced app development",
+      "description": "Full stack app development",
+      "target_date": "2025-10-30",
+      "status": "In Progress",
+      "created_at": "2026-02-26T18:39:17.443Z"
+    }
+  ]
+}
