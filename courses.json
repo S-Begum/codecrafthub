@@ -11,11 +11,12 @@
     },
     {
       "id": 2,
-      "name": "Advanced app development",
-      "description": "Full stack app development",
-      "target_date": "2025-10-30",
+      "name": "Advanced web app development",
+      "description": "Detailed full stack app development",
+      "target_date": "2026-04-01",
       "status": "In Progress",
-      "created_at": "2026-02-26T18:39:17.443Z"
+      "created_at": "2026-02-26T18:39:17.443Z",
+      "updated_at": "2026-02-26T21:42:12.566Z"
     }
   ]
 }

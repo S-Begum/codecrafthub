@@ -17,6 +17,9 @@ const DATA_FILE = path.join(__dirname, 'courses.json') // Path to JSON data file
 // This allows us to access req.body in POST and PUT requests
 app.use(express.json())
 
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
+
 // ============================================
 // HELPER FUNCTIONS
 // ============================================
@@ -438,31 +441,14 @@ app.delete('/api/courses/:id', async (req, res) => {
   }
 })
 
-/**
- * GET /
- * Welcome route with API information
- */
-app.get('/', (req, res) => {
-  res.json({
-    message: 'Welcome to CodeCraftHub API',
-    description: 'A simple learning platform API for managing courses',
-    version: '1.0.0',
-    endpoints: {
-      'GET /api/courses': 'Get all courses',
-      'GET /api/courses/:id': 'Get a specific course by ID',
-      'GET /api/courses/stats': 'Get course statistics', // NEW endpoint added here
-      'POST /api/courses': 'Create a new course',
-      'PUT /api/courses/:id': 'Update an existing course',
-      'DELETE /api/courses/:id': 'Delete a course',
-    },
-    example_course: {
-      name: 'Node.js Basics',
-      description: 'Learn Node.js fundamentals',
-      target_date: '2024-12-31',
-      status: 'Not Started',
-    },
-  })
-})
+
+
+// ============================================
+// ROOT ROUTE - Serve Dashboard (Option A)
+// ============================================
+app.get('/', (req, res) => {    
+    res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+});
 
 // ============================================
 // START THE SERVER
@@ -481,6 +467,7 @@ async function startServer() {
             console.log('=================================');
             console.log(`CodeCraftHub API is running!`);
             console.log(`Server URL: http://localhost:${PORT}`);
+            console.log(`Dashboard: http://localhost:${PORT}`);
             console.log(`Data file: ${DATA_FILE}`);
             console.log('=================================');
             console.log('Available endpoints:');
