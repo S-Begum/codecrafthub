@@ -20,3 +20,5 @@ CodeCraftHub is a lightweight API that allows developers to create and manage th
 - **Status Tracking**: Track courses as "Not Started", "In Progress", or "Completed"
 - **Error Handling**: Comprehensive error messages for common issues
 - **Beginner-Friendly**: Well-commented code perfect for learning
+
+Note: Code generated from DeepSeek (https://chat.deepseek.com/) and Bolt.new (https://bolt.new/)
