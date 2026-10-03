@@ -23,4 +23,4 @@ CodeCraftHub is a lightweight API that allows developers to create and manage th
 - **Error Handling**: Comprehensive error messages for common issues
 - **Beginner-Friendly**: Well-commented code perfect for learning
 
-Note: Code generated from DeepSeek (https://chat.deepseek.com/) and Bolt.new (https://bolt.new/)
+Note: 'Vibe Code' was generated from DeepSeek (https://chat.deepseek.com/) and Bolt.new (https://bolt.new/)
